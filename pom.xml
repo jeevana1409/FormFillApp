@@ -32,13 +32,13 @@
 
   <build>
     <plugins>
-      <!-- Modern Java 21 Compiler Plugin -->
+      <!-- Modern Java 17 Compiler Plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.11.0</version>
         <configuration>
-          <release>21</release>
+          <release>17</release>
         </configuration>
       </plugin>
 
