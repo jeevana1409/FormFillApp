@@ -44,8 +44,8 @@ pipeline {
                         -H "Authorization: token \$GITHUB_TOKEN" \
                         -H "Accept: application/vnd.github.v3+json" \
                         -d '{
-                            "title": "Auto PR: ${env.GIT_BRANCH}} → dev",
-                            "head": "feature-branch-xyz",,
+                            "title": "Auto PR: ${env.GIT_BRANCH} → dev",
+                            "head": "feature-branch-xyz",
                             "base": "dev",
                             "body": "Automatically created after successful SonarQube Quality Gate."
                         }'
