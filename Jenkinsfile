@@ -36,7 +36,7 @@ pipeline {
                 }
             }
             steps {
-                withCredentials([string(credentialsId: 'github-token', variable: 'GITHUB_TOKEN')]) {
+                withCredentials([string(credentialsId: 'github-cred', variable: 'GITHUB_TOKEN')]) {
                     sh """
                         curl -X POST https://api.github.com/repos/jeevana1409/FormFillApp/pulls \
                         -H "Authorization: token \$GITHUB_TOKEN" \
