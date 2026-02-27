@@ -36,6 +36,8 @@ pipeline {
                 }
             }
             steps {
+                sh 'echo Branch is: $BRANCH_NAME'   
+
                 withCredentials([string(credentialsId: 'github-cred', variable: 'GITHUB_TOKEN')]) {
                     sh """
                         curl -X POST https://api.github.com/repos/jeevana1409/FormFillApp/pulls \
